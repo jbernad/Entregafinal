@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/usuarios"
+            android:icon="@drawable/ic_usuario"
+            android:title="Tabla de Usuarios" />
+        <item
+            android:id="@+id/citas"
+            android:icon="@drawable/ic_citas"
+            android:title="Tabla de Citas" />
+        <item
+            android:id="@+id/pagos"
+            android:icon="@drawable/ic_pagos"
+            android:title="Tabla de Pagos" />
+        <item
+            android:id="@+id/ElCliente"
+            android:icon="@drawable/ic_idusuario"
+            android:title="Datos de un cliente" />
+        <item
+            android:id="@+id/Fecha"
+            android:icon="@drawable/ic_fecha"
+            android:title="Busca fecha" />
+    </group>
+
+    <item android:title="Communicate">
+        <menu>
+            <!--Opción para llamar al autor-->
+            <item
+                android:id="@+id/nav_llamar"
+                android:icon="@drawable/ic_llamar"
+                android:title="LLamar al autor" />
+            <!--Opción para acceder a la agenda-->
+            <item
+                android:id="@+id/nav_agenda"
+                android:icon="@drawable/ic_action_contacts"
+                android:title="Agenda" />
+        </menu>
+    </item>
+</menu>

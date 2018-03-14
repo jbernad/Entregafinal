@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#A9F5F2"
+    tools:context="com.example.jorgebr.pglfinal.Admin.BuscaFechaActivity">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="53dp"
+        android:textSize="17dp"
+        android:id="@+id/resultado" />
+    <ListView
+        android:layout_width="368dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/lista"
+        tools:layout_editor_absoluteY="0dp"
+        tools:layout_editor_absoluteX="8dp"
+        android:layout_below="@+id/resultado">
+    </ListView>
+</RelativeLayout>

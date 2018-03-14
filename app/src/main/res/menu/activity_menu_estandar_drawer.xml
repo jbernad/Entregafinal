@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/datospersonales"
+            android:icon="@drawable/ic_fotouser"
+            android:title="Editar mis datos" />
+        <item
+            android:id="@+id/citasdelusuario"
+            android:icon="@drawable/ic_citasuser"
+            android:title="Mis Citas" />
+        <item
+            android:id="@+id/PedirCita"
+            android:icon="@drawable/ic_action_name"
+            android:title="Pedir Cita" />
+    </group>
+
+    <item android:title="LLamadas">
+        <menu>
+            <item
+                android:id="@+id/llamar"
+                android:icon="@drawable/ic_llamar"
+                android:title="LLamar al autor" />
+        </menu>
+    </item>
+</menu>

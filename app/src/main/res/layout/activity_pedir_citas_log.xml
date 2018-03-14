@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#A9F5F2"
+    tools:context="com.example.jorgebr.pglfinal.CitasUsuarioLog.PedirCitasLogActivity">
+
+    <EditText
+        android:id="@+id/editTextFechaCita"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="Pulse para pedir fecha"
+        android:layout_alignBottom="@+id/btInsertar"
+        android:layout_toEndOf="@+id/btInsertar"
+        android:layout_marginStart="33dp" />
+    <TimePicker
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tphora"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true">
+
+    </TimePicker>
+
+    <Button
+        android:id="@+id/btInsertar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="21dp"
+        android:text="Insertar"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="13dp" />
+
+    <Button
+        android:id="@+id/Confirmarhora"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/tphora"
+        android:layout_alignStart="@+id/editTextFechaCita"
+        android:layout_marginBottom="17dp"
+        android:text="Confirmar la hora" />
+</RelativeLayout>

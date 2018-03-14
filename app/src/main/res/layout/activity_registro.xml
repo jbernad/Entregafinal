@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#9FF781"
+    android:orientation="vertical"
+    android:weightSum="2"
+    tools:context="com.example.jorgebr.pglfinal.RegistroActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <!--Nombre usuario-->
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:id="@+id/nomuser" >
+            <EditText
+                android:id="@+id/TxtNombreUsuarioReg"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/nombre_usuario" />
+        </android.support.design.widget.TextInputLayout>
+        <!--Petición del Contraseña-->
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/passuser"
+            android:layout_weight="1"
+            android:layout_below="@+id/nomuser">
+            <EditText
+                android:id="@+id/TxtcontraseñaReg"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPassword"
+                android:hint="@string/contraseña" />
+        </android.support.design.widget.TextInputLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <!--Petición del Email-->
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/passuser"
+            android:layout_weight="1"
+            android:id="@+id/textInputLayoutEmail">
+            <EditText
+                android:id="@+id/TxtemailReg"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textEmailAddress"
+                android:hint="@string/correo_electrónico" />
+        </android.support.design.widget.TextInputLayout>
+        <!--Petición del DNI-->
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:id="@+id/textInputLayoutDNI">
+            <EditText
+                android:id="@+id/TxtDNIReg"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPostalAddress"
+                android:hint="DNI" />
+        </android.support.design.widget.TextInputLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <!--Petición del Telefono-->
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:id="@+id/textInputLayoutPhone">
+            <EditText
+                android:id="@+id/TxtPhoneReg"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:hint="Teléfono" />
+        </android.support.design.widget.TextInputLayout>
+        <!--Petición del Telefono-->
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:id="@+id/nombremascota">
+            <EditText
+                android:id="@+id/Txtmascota"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="text"
+                android:hint="nombre mascota" />
+        </android.support.design.widget.TextInputLayout>
+    </LinearLayout>
+    <Button
+        android:layout_width="85dp"
+        android:layout_height="85dp"
+        android:id="@+id/bt"
+        android:layout_marginLeft="123dp"
+        android:background="@mipmap/ic_guardar"/>
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="2"
+        android:background="@mipmap/ic_imgreg"
+        />
+</LinearLayout>

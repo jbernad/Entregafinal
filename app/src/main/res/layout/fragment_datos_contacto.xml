@@ -1,0 +1,69 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.jorgebr.pglfinal.PdfDatos.DatosContactoFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <!--DNI-->
+    <TextView
+        android:id="@+id/LbDNI"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="45dp"
+        android:text="DNI Usuario" />
+
+    <EditText
+        android:id="@+id/TxtDni"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="21dp"
+        android:layout_marginTop="28dp"
+        android:layout_toEndOf="@+id/LbDNI"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="DNI Usuario" />
+    <!--Telefono-->
+    <TextView
+        android:id="@+id/LbTelefono"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Telefono"
+        android:layout_alignBaseline="@+id/TxtTelefono"
+        android:layout_alignBottom="@+id/TxtTelefono"
+        android:layout_alignStart="@+id/LbPet" />
+
+    <EditText
+        android:id="@+id/TxtTelefono"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/TxtDni"
+        android:layout_below="@+id/TxtDni"
+        android:layout_marginTop="13dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="Telefono" />
+    <!--Nombre Perro-->
+    <TextView
+        android:id="@+id/LbPet"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nombre Perro"
+        android:layout_alignBaseline="@+id/TxtPet"
+        android:layout_alignBottom="@+id/TxtPet"
+        android:layout_alignStart="@+id/LbDNI" />
+
+    <EditText
+        android:id="@+id/TxtPet"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/TxtTelefono"
+        android:layout_below="@+id/TxtTelefono"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="Nombre del perro" />
+</RelativeLayout>

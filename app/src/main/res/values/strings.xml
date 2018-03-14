@@ -1,0 +1,37 @@
+<resources>
+    <string name="app_name">PGLfinal</string>
+    <string name="title_activity_ayuda_main">AyudaMainActivity</string>
+
+    <!--Iconos del appbar-->
+    <string name="icono_de_ayuda">icono de ayuda</string>
+    <string name="icono_de_retroceder">icomo de retroceder</string>
+
+    <!--Formulario de Login-->
+    <string name="nombre_usuario">Username</string>
+    <string name="contraseña">Password</string>
+    <string name="correo_electrónico">email</string>
+
+    <!--Errores del formulario-->
+    <string name="requerido">Campo Requerido</string>
+    <string name="Long_insuf">La longitud es insuficiente</string>
+    <string name="incorrecta">Contraseña incorrecta</string>
+    <string name="title_activity_menu_drawer">MenuDrawerActivity</string>
+    <string name="formatoIncorrecto">No cumple requisitos de validación</string>
+    <string name="soloespacios">La contraseña no puede estar formada por solo espacios</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_menu_estandar">MenuEstandarActivity</string>
+
+    <string name="sin_datos">Sin datos.</string>
+
+    <string name="progress_cargando_datos">Cargando datos&#8230;</string>
+    <string name="title_activity_datos_personales">DatosPersonalesActivity</string>
+    <string name="section_format">Hello World from section: %1$d</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_datos_usuario">DatosUsuarioActivity</string>
+</resources>

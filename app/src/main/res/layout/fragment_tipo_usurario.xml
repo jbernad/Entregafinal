@@ -1,0 +1,59 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#A9F5F2"
+    tools:context="com.example.jorgebr.pglfinal.PdfDatos.TipoUsurarioFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <!--Tipo Usuario-->
+    <TextView
+        android:id="@+id/LbType"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="37dp"
+        android:text="Tipo Usuario"
+        android:layout_marginEnd="11dp"
+        android:layout_alignParentTop="true"
+        android:layout_toStartOf="@+id/TxtType" />
+    <EditText
+        android:id="@+id/TxtType"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="Tipo Usuario"
+        android:layout_marginEnd="31dp"
+        android:layout_alignBaseline="@+id/LbType"
+        android:layout_alignBottom="@+id/LbType"
+        android:layout_alignParentEnd="true" />
+    <!--Donde guardamos la foto-->
+    <ImageView
+        android:id="@+id/camarita"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginLeft="100dp"
+        android:layout_marginTop="39dp"
+        android:src="@drawable/camarita"
+        android:layout_marginStart="58dp"
+        android:layout_below="@+id/TxtType"
+        android:layout_alignStart="@+id/LbType" />
+    <!--Botón que saca una foto-->
+    <Button
+        android:id="@+id/btnsacafoto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/LbType"
+        android:layout_below="@+id/camarita"
+        android:layout_marginTop="57dp"
+        android:text="Sacar Foto" />
+    <!--Botón de galeria-->
+    <Button
+        android:id="@+id/btngaleria"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Galeria"
+        android:layout_alignTop="@+id/btnsacafoto"
+        android:layout_toEndOf="@+id/btnsacafoto"
+        android:layout_marginStart="44dp" />
+</RelativeLayout>

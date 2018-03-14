@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.jorgebr.pglfinal">
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_perro"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_perro"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+        <!-- Main Activity -->
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+
+            <!-- Ayuda Activity -->
+        </activity>
+        <activity android:name=".AyudaMainActivity" />
+
+        <!-- Activity REGISTRO ACTIVITY -->
+        <activity
+            android:name=".RegistroActivity"
+            android:parentActivityName=".MainActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="MainActivity" />
+        </activity>
+
+        <!-- Activity del Usuarios -->
+        <activity
+            android:name=".Usuarios.UsuariosActivity"
+            android:label="UsuariosActivity"
+            android:parentActivityName=".MenusDrawer.MenuDrawerActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.jorgebr.pglfinal.MenusDrawer.MenuDrawerActivity" />
+        </activity>
+
+        <!-- Activity del Usuarios Insertar -->
+        <activity
+            android:name=".Usuarios.UsuariosInsertarActivity"
+            android:label="UsuariosInsertarActivity"
+            android:parentActivityName=".Usuarios.UsuariosActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.jorgebr.pglfinal.Usuarios.UsuariosActivity" />
+        </activity>
+        <!-- Activity del Usuarios Modificar -->
+        <activity
+            android:name=".Usuarios.UsuariosModificarActivity"
+            android:label="UsuariosModificarActivity"
+            android:parentActivityName=".Usuarios.UsuariosActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.jorgebr.pglfinal.Usuarios.UsuariosActivity" />
+        </activity>
+
+        <!-- Activity del Citas -->
+        <activity
+            android:name=".Citas.CitasActivity"
+            android:label="CitasActivity"
+            android:parentActivityName=".MenusDrawer.MenuDrawerActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.jorgebr.pglfinal.MenusDrawer.MenuDrawerActivity" />
+        </activity>
+
+        <!-- Activity del Citas Insertar -->
+        <activity
+            android:name=".Citas.CitasInsertarActivity"
+            android:label="CitasInsertarActivity"
+            android:parentActivityName=".Citas.CitasActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.jorgebr.pglfinal.Citas.CitasActivity" />
+        </activity>
+        <!-- Activity del Citas Modificar -->
+        <activity
+            android:name=".Citas.CitasModificarActivity"
+            android:label="CitasModificarActivity"
+            android:parentActivityName=".Citas.CitasActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.jorgebr.pglfinal.Citas.CitasActivity" />
+        </activity>
+        <activity
+            android:name=".PdfDatos.DatosPersonalesActivity"
+            android:label="@string/title_activity_datos_personales"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:parentActivityName=".MenusDrawer.MenuEstandarActivity">
+            <meta-data
+            android:name="android.support.PARENT_ACTIVITY"
+            android:value="com.example.jorgebr.pglfinal.MenusDrawer.MenuEstandarActivity"/>
+        </activity>
+
+        <!-- MENUS DE USUARIOS -->
+        <activity
+            android:name=".MenusDrawer.MenuEstandarActivity"
+            android:label="@string/title_activity_menu_estandar"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".MenusDrawer.MenuDrawerActivity"
+            android:label="@string/title_activity_menu_drawer"
+            android:theme="@style/AppTheme.NoActionBar" />
+
+        <!-- Activity del Citas -->
+        <activity
+            android:name=".Pagos.PagosActivity"
+            android:label="PagosActivity"
+            android:parentActivityName=".MenusDrawer.MenuDrawerActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.jorgebr.pglfinal.MenusDrawer.MenuDrawerActivity" />
+        </activity>
+
+        <!-- Activity del Citas Insertar -->
+        <activity
+            android:name=".Pagos.PagosInsertarActivity"
+            android:label="PagosInsertarActivity"
+            android:parentActivityName=".Pagos.PagosActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.jorgebr.pglfinal.Pagos.PagosActivity" />
+        </activity>
+        <!-- Activity del Citas Modificar -->
+        <activity
+            android:name=".Pagos.PagosModificarActivity"
+            android:label="PagosModificarActivity"
+            android:parentActivityName=".Pagos.PagosActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.jorgebr.pglfinal.Pagos.PagosActivity" />
+        </activity>
+
+        <!-- PROVEEDOR DE CONTENIDO -->
+        <provider
+            android:name=".Proveedor.ProveedorDeContenido"
+            android:authorities="com.example.jorgebr.proyectofinal.Proveedor.ProveedorDeContenido"
+            android:enabled="true"
+            android:exported="true" />
+
+        <activity android:name=".CitasUsuarioLog.CitasUsuarioLogActivity" />
+        <activity android:name=".CitasUsuarioLog.PedirCitasLogActivity" />
+        <activity android:name=".Admin.BuscaFechaActivity">
+
+        </activity>
+
+        <activity android:name=".Admin.TodoClienteActivity"></activity>
+    </application>
+
+</manifest>

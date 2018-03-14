@@ -1,0 +1,71 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.jorgebr.pglfinal.PdfDatos.DatosCuentaFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <!--Nombre-->
+    <TextView
+        android:id="@+id/LbNuser"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="45dp"
+        android:text="Nombre Usuario" />
+
+    <EditText
+        android:id="@+id/TxtNuser"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="21dp"
+        android:layout_marginTop="28dp"
+        android:layout_toEndOf="@+id/LbNuser"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="Nombre Usuario" />
+    <!--Contraseña-->
+    <TextView
+        android:id="@+id/LbPasswd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/TxtNuser"
+        android:layout_marginTop="29dp"
+        android:layout_toStartOf="@+id/TxtNuser"
+        android:text="Contraseña" />
+
+    <EditText
+        android:id="@+id/TxtPassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/TxtNuser"
+        android:layout_below="@+id/TxtNuser"
+        android:layout_marginTop="13dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="Password"
+        />
+    <!--Email-->
+    <TextView
+        android:id="@+id/LbMail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/LbPasswd"
+        android:layout_below="@+id/TxtPassword"
+        android:layout_marginTop="25dp"
+        android:text="Email" />
+
+    <EditText
+        android:id="@+id/TxtEmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/TxtPassword"
+        android:layout_below="@+id/TxtPassword"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Email" />
+
+</RelativeLayout>
